@@ -1,0 +1,12 @@
+1. Start.
+2. Read N. Repeat until 5 <= N <= 12 (show an error message every time N is invalid).
+3. For i = 0 to N-1: read a[i] and repeat until 0 <= a[i] <= 1000.
+4. Task 1: print the array in the order entered.
+5. Task 2: sum = 0, min = max = a[0]. For every element add it to sum and update min and max. average = sum / N. Print all four values.
+6. Task 3: second = -1. For every element, if a[i] != max and a[i] > second then second = a[i]. If second is still -1 print "no second-largest distinct value", otherwise print second.
+7. Task 4: peaks = 0. For i = 1 to N-2: if a[i] > a[i-1] and a[i] > a[i+1] then peaks = peaks + 1. Print peaks.
+8. Task 5: run = 1, longest = 1. For i = 1 to N-1: if a[i] > a[i-1] then run = run + 1, else run = 1. If run > longest then longest = run. Print longest.
+9. Task 6: read K. shift = K mod N. If shift < 0 then shift = shift + N (a left rotation becomes a right rotation).
+10. Repeat shift times: temp = a[N-1]; for j = N-1 down to 1 do a[j] = a[j-1]; then a[0] = temp. Print the rotated array.
+11. Task 7: R = last two digits of my registration number = 42, D = (R mod 9) + 1 = 7. count = 0. For every element of the rotated array, if a[i] mod D == 0 then count = count + 1. Print D and count.
+12. Stop.
